@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <title>API Geolocalización</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>IPv4-IPv6 Geolocalización</h1>
+      <h4>Mini proyecto utilizando la api IP Geolocation de IPWHOUS.io de RapidAPI.com</h4>
+      <form id="form">
+        <label for="ip"><h5>Localizador IP</h5></label>
+        <input
+          type="text"
+          id="ip"
+          name="ip"
+          placeholder="Ingrese dirección ip"
+        />
+        <small
+          >Por ejemplo: 170.233.192.50 (IPv4) o 2001:0820:9511:FFFF:FFFF:FFFF:FFFF:FFFF
+          (IPv6)</small
+        >
+        <button id="submit" type="submit">Buscar información de la IP</button>
+      </form>
+      <div>
+        <pre id="info">Información:</pre>
+      </div>
+    </main>
+    <script src="./api.js"></script>
+  </body>
+</html>
